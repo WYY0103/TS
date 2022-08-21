@@ -1,0 +1,41 @@
+{
+  // 编译src下面的所有文件  **表示任意目录   *表示任意文件
+  "include": ["ts/**/*"],
+  // 排除文件 src下面的hello文件不编译
+  // "exclude": ["./src/hello/**/*"]
+
+  // 编译器的选项  编译器如何对文件进行编译
+  "compilerOptions": {
+    // 目标  用来指定ts被编译为es的版本
+    "target": "ES2015",
+    // 指定要使用的模块化规范
+    "module":"es2015",
+    // 指定项目要使用的库  默认不动
+    // "lib": []
+    // 指定编译后的js文件所放的位置
+    "outDir": "dist",
+    // 将代码合成一个文件  将编译后的所有文件合到app中
+    // "outFile": "./dist/app.js",
+
+    // 是否对js文件进行编译
+    "allowJs": false,
+    // 检查js代码是否符合语法条件
+    "checkJs": false,
+    // 是否移除注释
+    "removeComments": false,
+    // 不生成编译后的文件
+    "noEmit": false,
+    // 当有错误时不会生成编译文件
+    "noEmitOnError": true,
+     // 严格检查的总开关  若为true  则下面的全为true
+    "strict": true ,
+    // 用来设置编译后的文件是否使用严格模式
+    "alwaysStrict": true,
+    // 不允许有隐士any的类型
+    "noImplicitAny": true,
+    // 不允许不明确类型的this
+    "noImplicitThis": true,
+    // 严格检查空值 
+    "strictNullChecks": true,
+  }
+}
